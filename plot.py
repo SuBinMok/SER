@@ -12,9 +12,9 @@ def main():
     sr = 160000
     n_fft = 512
 
-    data = np.fromfile("./result_audio/20210204/up_resynthesis.wav", dtype=np.int16)
-    data2 = np.fromfile("./result_audio/20210204/l_u_resynthesis.wav", dtype=np.int16)
-    data3 = np.fromfile("./result_audio/20210204/q_u_resynthesis.wav", dtype=np.int16)
+    data = np.fromfile("path1", dtype=np.int16)
+    data2 = np.fromfile("path2", dtype=np.int16)
+    data3 = np.fromfile("path3", dtype=np.int16)
 
     data = calcu(data, sr, n_fft)
     data2 = calcu(data2, sr, n_fft)
@@ -38,8 +38,7 @@ def main():
     fig = plt.gcf()
 
     plt.show()
-    fig.savefig('./result_audio/20210204/up_total.png')
+    fig.savefig('./result/result.png')
 
 if __name__ == '__main__':
-    # 감성 및 강도 입력받는 부분 만들기/
     main()
