@@ -3,7 +3,7 @@ import glob
 
 
 
-path = "C:\\Users\\03130\\Videos\\4K Video Downloader\\test\\"
+path = "path"
 
 file_list = glob.glob(path+"\\*.mp4")
 i=1
