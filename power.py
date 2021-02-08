@@ -79,7 +79,7 @@ def FFT(dir, fig_size): #power spectrum
     plt.xlabel("Frequency")
     plt.ylabel("Magnitude")
     plt.title("Power spectrum")
-    plt.savefig('C://Users//03130//Desktop//2_석사//01_랩미팅//012121//stft1.png', dpi=300)
+    plt.savefig('./result.png', dpi=300)
 
 def STFT(dir, fig_size):
     print("-*-*-*-*-STFT-*-*-*-*-")
@@ -126,7 +126,7 @@ def mfcc(dir, fig_size):
     plt.title("MFCCs")
 
     # show plots
-    plt.savefig('C://Users//03130//Desktop//2_석사//01_랩미팅//012121//mfcc16.png', dpi=300)
+    plt.savefig('./result.png', dpi=300)
 
 
 def pitch_wave(path):
@@ -174,10 +174,9 @@ def amplitude():
     print("-*-*-*-*-amplitude-*-*-*-*-")
 
 def main():
-    a_dir = "./research/audio/"
-    a_dir = "./research/result/"
-    # dir = 'C://Users//03130//Desktop//2_석사//debate_audios//debate_audios//p1.p2.wav'
-
+    dir = "path"
+    
+    
     # fs = (15, 10)
     pitch_spectro(dir)
     #https://groups.google.com/g/librosa/c/bR9wJwIzrrE?pli=1
