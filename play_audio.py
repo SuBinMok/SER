@@ -5,7 +5,7 @@ import wave
 
 chunk = 1024
 
-path = 'C://Users//03130//Desktop//2_석사//debate_audios//debate_audios//p1p2.wav'
+path = 'path'
 
 with wave.open(path, 'rb') as f:
     p = pyaudio.PyAudio()
